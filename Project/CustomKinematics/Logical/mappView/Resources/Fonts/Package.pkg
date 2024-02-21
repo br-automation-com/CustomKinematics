@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="FontsPackage" PackageType="FontsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Fonts.fontscfg</Object>
+    <Object Type="File">ABBvoice.ttf</Object>
+    <Object Type="File">ABBvoice_Lt.ttf</Object>
+    <Object Type="File">ABBvoice_Md.ttf</Object>
+    <Object Type="File">ABBvoice_Rg.ttf</Object>
+  </Objects>
+</Package>

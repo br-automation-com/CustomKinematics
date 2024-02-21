@@ -1,0 +1,5 @@
+VAR
+	dimensions : LREAL;
+	roboPars : MpRoboticsFlexParType;
+	robotFb : MpRoboticsFlex;
+END_VAR

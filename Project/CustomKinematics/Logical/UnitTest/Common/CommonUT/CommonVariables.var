@@ -1,0 +1,19 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: utTemplate_automated
+ * File: variables.var
+ * Author: -
+ * Created: - 
+ ********************************************************************
+ * Local variables of program utTemplate_automated
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	ArrangeSubState : USINT;
+	ActSubState : USINT;
+	AssertSubState : USINT;
+	TestState : USINT;
+	CommonTestsuite : UtMgrTestSuite := (Name:='Common Unit Tests',Description:='Common Unit Tests',Type:=utMgrTEST_TYPE_C,MetaInformation:='Meta');
+END_VAR
+(*Variables used in the tests*)

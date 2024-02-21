@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="MainContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Power" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbPowerRobot" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Home" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbHome" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.PowerOn" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbRobotPowered" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.IsHomed" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbRobotHomed" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Position[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosX" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Position[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosY" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Position[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosC" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Info.JointAxisPosition[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosQ1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Info.JointAxisPosition[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosQ2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Info.JointAxisPosition[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosQ3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Jog" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbJogRobot" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:roboPars.Jog.Velocity[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niJogAxis1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:roboPars.Jog.Velocity[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niJogAxis2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:roboPars.Jog.Velocity[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niJogAxis3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:roboPars.Position[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niMoveAxis1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:roboPars.Position[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niMoveAxis2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:roboPars.Position[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niMoveAxis3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.MoveDirect" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbMoveDirect" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::RobotTask:robotFb.MoveLinear" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbMoveLinear" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Input.JointPos[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirectTestQ1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Input.JointPos[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirectTestQ2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Input.JointPos[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirectTestQ3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Output.TcpPos[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirectTestX" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Output.TcpPos[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirectTestY" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Output.TcpPos[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirectTestC" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Output.JointPos[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInverseTestQ3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Output.JointPos[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInverseTestQ2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Output.JointPos[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInverseTestQ1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Input.TcpPos[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niInverseTestC" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Input.TcpPos[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niInverseTestY" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Input.TcpPos[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niInverseTestX" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.Cmds.RunDirect" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbRunDirect" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.Cmds.RunInverse" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbRunInverse" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Input.JointPos[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputPosQ1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Input.JointPos[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputPosQ2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Input.JointPos[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputPosQ3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Input.JointDer[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputDerivativeQ1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Input.JointDer[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputDerivativeQ2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Input.JointDer[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputDerivativeQ3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Output.TcpDer[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirDerOutputTCPDerivativeX" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Output.TcpDer[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirDerOutputTCPDerivativeY" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Output.TcpDer[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirDerOutputTCPDerivativeC" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.Cmds.RunDirectDerivative" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbRunDirectDerivative" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Input.TcpPos[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputPosQ4" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Input.TcpPos[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputPosQ5" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Input.TcpPos[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niDirDerInputPosQ6" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Input.TcpDer[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niInvDerInputDerivativeX" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Input.TcpDer[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niInvDerInputDerivativeY" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Input.TcpDer[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="niInvDerInputDerivativeC" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Output.JointDer[0]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInvDerOutputDerivativeQ1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Output.JointDer[1]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInvDerOutputDerivativeQ2" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Output.JointDer[2]" attribute="node" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInvDerOutputDerivativeQ3" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.Cmds.RunInverseDerivative" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbRunInverseDerivative" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay"> 
+			<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.ReturnVal" attribute="value" /> 
+			<Target xsi:type="snippet" refId="TestOutputSnippet" attribute="value" /> 
+		</Binding>
+		<Binding mode="oneWay"> 
+			<Source xsi:type="snippet" refId="TestOutputSnippet" attribute="value" /> 
+			<Target xsi:type="brease" widgetRefId="toDirectTestStatus" contentRefId="MainContent" attribute="value" /> 
+		</Binding>
+		<Binding mode="oneWay"> 
+			<Source xsi:type="snippet" refId="TestOutputSnippet" attribute="value" /> 
+			<Target xsi:type="brease" widgetRefId="toInverseTestStatus" contentRefId="MainContent" attribute="value" /> 
+		</Binding>
+		<Binding mode="oneWay"> 
+			<Source xsi:type="snippet" refId="TestOutputSnippet" attribute="value" /> 
+			<Target xsi:type="brease" widgetRefId="toDirectDerivativeTestStatus" contentRefId="MainContent" attribute="value" /> 
+		</Binding>
+		<Binding mode="oneWay"> 
+			<Source xsi:type="snippet" refId="TestOutputSnippet" attribute="value" /> 
+			<Target xsi:type="brease" widgetRefId="toInverseDerivativeTestStatus" contentRefId="MainContent" attribute="value" /> 
+		</Binding>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectDerivativePars.Info.Status.Code" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirectDerivativeInfoStatusCode" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InverseDerivativePars.Info.Status.Code" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInverseDerivativeInfoStatusCode" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.DirectPars.Info.Status.Code" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noDirectInfoStatusCode" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::TransformT:transformTestIf.InversePars.Info.Status.Code" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noInverseInfoStatusCode" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RobotTask:robotFb.MoveActive" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbMoveActive" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RobotTask:robotFb.ErrorReset" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="mpbErrorReset" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::RobotTask:robotFb.PathVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="TcpPosQ4" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::RobotTask:robotFb.StatusID" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="noErrorStatusCode" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RobotTask:robotFb.Error" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent" widgetRefId="tbRobotError" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

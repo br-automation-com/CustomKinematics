@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Styles id="BuRThemeFlatNewcommonStyles" xmlns="http://www.br-automation.com/iat2015/styles/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!--date time input-->
+	
+	<Style id="Input" xsi:type="widgets.brease.DateTimeInput" 
+		textColor="#FFF" 
+		borderWidth="0px 0px 0px 6px" 
+		borderColor="#FF8800" 
+		activeBorderColor="#262626" 
+		fontName="ABBvoice" fontSize="20px" 
+		backColor="#262626" 
+		activeBackColor="#262626" 
+		activeTextColor="#FFF" 
+		bold="false"  />
+
+	<Style id="InputLarge" xsi:type="widgets.brease.DateTimeInput" 
+		textColor="#FFF" 
+		borderWidth="0px 0px 0px 6px" 
+		borderColor="#FF8800" 
+		activeBorderColor="#262626" 
+		fontName="ABBvoice" fontSize="32px" 
+		backColor="#262626" 
+		activeBackColor="#262626" 
+		activeTextColor="#FFF"
+		bold="false" />
+		
+	<Style id="InputCommand" xsi:type="widgets.brease.DateTimeInput" 
+		textColor="#262626" 
+		borderWidth="0px 0px 0px 6px" 
+		borderColor="#d2d2d2" 
+		activeBorderColor="#262626" 
+		fontName="ABBvoice" fontSize="20px" 
+		backColor="#FFF" 
+		activeBackColor="#262626" 
+		activeTextColor="#FFF" 
+		bold="false" />
+		
+	<!--date time output-->
+	
+	<Style id="Output" xsi:type="widgets.brease.DateTimeOutput" 
+		textColor="#262626"  
+		borderWidth="0px" 
+		fontName="ABBvoice" fontSize="20px" 
+		backColor="transparent"
+		bold="false" />
+
+	<Style id="OutputLarge" xsi:type="widgets.brease.DateTimeOutput" 
+		borderWidth="0px" 
+		textColor="#262626" 
+		fontName="ABBvoice" fontSize="32px" 
+		backColor="transparent" 
+		bold="false" />
+		
+	<Style id="Overview" xsi:type="widgets.brease.DateTimeOutput" 
+		textColor="#262626" 
+		borderWidth="0px" 
+		fontName="ABBvoice" fontSize="52px" 
+		bold="false" 
+		backColor="transparent" />		
+
+	<!--measeurement system selector-->
+	
+	<Style id="transparent" xsi:type="widgets.brease.MeasurementSystemSelector" 
+		backColor="transparent" 
+		borderWidth="0px" 
+		mouseDownBackColor="transparent" 
+		mouseDownBorderWidth="0px" 
+		fontName="ABBvoice" fontSize="16px" 
+		bold="true" 
+		textColor="#FFFFFF" />
+	
+	<!--listbox-->
+
+	<Style id="ListBox1" xsi:type="widgets.brease.ListBox" 
+		fontName="ABBvoice" fontSize="14px" 
+		bold="false" 
+		textColor="#262626" 
+		activeTextColor="#FFFFFF" 
+		borderWidth="0px" 
+		backColor="#FFF" 
+		activeBackColor="#262626" 
+		borderColor="#ff8800" 
+		textAlign="center" />
+
+	<!--radial gauge-->
+	
+	<Style id="Gauge1" xsi:type="widgets.brease.RadialGauge"
+		borderWidth="4px" 
+		borderColor="#ff8800" 
+		pointerBackColor="#262626" 
+		backColor="#FFF" 
+		backColorScaleArea1="#d2d2d2" 
+		backColorScaleArea2="#d2d2d2" 
+		backColorScaleArea3="#d2d2d2"
+		backColorScaleArea4="#262626" 
+		backColorScaleArea5="#262626" />
+	
+	<Style id="Gauge2" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#262626" 
+		pointerBackColor="#d2d2d2" 
+		backColor="#FFF" 
+		backColorScaleArea1="#d2d2d2" />
+			
+	<Style id="Gauge1_from80_red" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#262626" 
+		pointerBackColor="#d2d2d2" 
+		backColor="#FFF" 
+		backColorScaleArea5="#d2d2d2" />
+	
+	<Style id="Gauge2_from80_red" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#ff8800" 
+		pointerBackColor="#ff8800" 
+		backColor="#FFF" 
+		backColorScaleArea1="#ff8800" />	
+	
+	<Style id="Gauge1_to20_red" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#ff8800"
+		pointerBackColor="#ff8800" 
+		backColor="#FFF" 
+		backColorScaleArea5="#ff8800" />
+	
+	<Style id="Gauge2_to20_red" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#262626" 
+		pointerBackColor="#262626" 
+		backColor="#d2d2d2" 
+		backColorScaleArea1="#FFF" 
+		backColorScaleArea2="#FFF" 
+		backColorScaleArea3="#FFF" 
+		backColorScaleArea4="#FFF" 
+		backColorScaleArea5="#262626" />	
+	
+	<Style id="Gauge1_to80_green" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#ff8800" 
+		pointerBackColor="#ff8800" 
+		backColor="#d2d2d2" 
+		backColorScaleArea1="#FFF" 
+		backColorScaleArea2="#FFF" 
+		backColorScaleArea3="#FFF" 
+		backColorScaleArea4="#FFF" 
+		backColorScaleArea5="#ff8800" />
+	
+	<Style id="Gauge2_to80_green" xsi:type="widgets.brease.RadialGauge" 
+		borderWidth="1px" 
+		borderColor="#262626" 
+		pointerBackColor="#262626" 
+		backColor="#ff8800" 
+		backColorScaleArea1="#FFF" 
+		backColorScaleArea2="#FFF"  
+		backColorScaleArea3="#FFF" 
+		backColorScaleArea4="#FFF" 
+		backColorScaleArea5="#262626"/>	
+	
+	
+</Styles>

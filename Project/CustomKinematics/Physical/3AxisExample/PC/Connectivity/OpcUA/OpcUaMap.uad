@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="H4.93">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <Task Name="RobotTask">
+        <Variable Name="roboPars" RecursiveEnable="2">
+          <Variable Name="Jog">
+            <Variable Name="Velocity" RecursiveEnable="2" />
+          </Variable>
+          <Variable Name="Position" RecursiveEnable="2" />
+        </Variable>
+        <Variable Name="robotFb" RecursiveEnable="2">
+          <Variable Name="Info">
+            <Variable Name="JointAxisPosition" RecursiveEnable="2" />
+          </Variable>
+          <Variable Name="Position" RecursiveEnable="2" />
+        </Variable>
+      </Task>
+      <Task Name="TransformT">
+        <Variable Name="transformTestIf" RecursiveEnable="2">
+          <Variable Name="DirectPars">
+            <Variable Name="Input">
+              <Variable Name="JointPos" RecursiveEnable="2" />
+              <Variable Name="TcpRefPos" RecursiveEnable="2" />
+            </Variable>
+            <Variable Name="Output">
+              <Variable Name="TcpPos" RecursiveEnable="2" />
+            </Variable>
+          </Variable>
+          <Variable Name="InversePars">
+            <Variable Name="Input">
+              <Variable Name="TcpPos" RecursiveEnable="2" />
+              <Variable Name="JointRefPos" RecursiveEnable="2" />
+            </Variable>
+            <Variable Name="Output">
+              <Variable Name="JointPos" RecursiveEnable="2" />
+            </Variable>
+          </Variable>
+          <Variable Name="DirectDerivativePars">
+            <Variable Name="Input">
+              <Variable Name="JointPos" RecursiveEnable="2" />
+              <Variable Name="JointDer" RecursiveEnable="2" />
+              <Variable Name="TcpRefPos" RecursiveEnable="2" />
+            </Variable>
+            <Variable Name="Output">
+              <Variable Name="TcpDer" RecursiveEnable="2" />
+            </Variable>
+          </Variable>
+          <Variable Name="InverseDerivativePars">
+            <Variable Name="Input">
+              <Variable Name="TcpPos" RecursiveEnable="2" />
+              <Variable Name="TcpDer" RecursiveEnable="2" />
+              <Variable Name="JointRefPos" RecursiveEnable="2" />
+            </Variable>
+            <Variable Name="Output">
+              <Variable Name="JointDer" RecursiveEnable="2" />
+            </Variable>
+          </Variable>
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

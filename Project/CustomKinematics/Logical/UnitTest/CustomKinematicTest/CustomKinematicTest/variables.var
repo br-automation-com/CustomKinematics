@@ -1,0 +1,23 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: utTemplate_automated
+ * File: variables.var
+ * Author: -
+ * Created: - 
+ ********************************************************************
+ * Local variables of program utTemplate_automated
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	Testsuite : UtMgrTestSuite := (Name:='HelpSampleTests',Description:='Tests for the custom kinematics from the Help sample',Type:=utMgrTEST_TYPE_C,MetaInformation:='(Optional field):To be filled');
+END_VAR
+(*Variables used in the tests*)
+VAR
+	addressesValid : BOOL;
+	cycleCount : UINT;
+	ActSubState : USINT;
+	TestState : TestCaseEnum;
+	test : USINT;
+	testIf : transformTestIfTyp;
+END_VAR

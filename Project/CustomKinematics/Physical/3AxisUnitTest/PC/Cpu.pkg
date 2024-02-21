@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
+    <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\Connectivity</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\TextSystem</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\UnitSystem</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\AccessAndSecurity</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappControl</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappMotion</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mapp6D</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappServices</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappSafety</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappView</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappVision</Object>
+    <Object Type="Package" Reference="true">\Physical\3AxisExample\PC\mappCockpit</Object>
+  </Objects>
+  <Configuration ModuleId="PC_any">
+    <AutomationRuntime Version="H4.93" />
+    <Build AnsicIncludeDirectories="\Logical\UnitTest\Libraries\UnitTest\" GccVersion="6.3.0" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Transfer SavedOfflineInstallationFolder="" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" />
+    <Vc FirmwareVersion="V4.72.6" />
+  </Configuration>
+</Cpu>

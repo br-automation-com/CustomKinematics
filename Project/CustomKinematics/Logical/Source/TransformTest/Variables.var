@@ -1,0 +1,6 @@
+VAR
+	TcpCount : USINT := 3;
+	JointCount : USINT := 3;
+	mechDimensions : LREAL;
+	transformTestIf : transformTestIfTyp;
+END_VAR

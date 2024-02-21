@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="MechanicalSystem_1" Type="mechanicalsystem">
+    <Property ID="TypeIsReadOnly" Value="0" />
+    <Selector ID="Type" Value="Custom">
+      <Selector ID="Subtype" Value="CustomStandard">
+        <Selector ID="Description" Value="Standard">
+          <Property ID="DimensionsData" Value="::RobotTask:dimensions" />
+        </Selector>
+        <Group ID="JointAxes">
+          <Property ID="JointAxesCount" Value="3" />
+        </Group>
+        <Group ID="CoordinateNames">
+          <Selector ID="CartesianCoordinates" Value="XY">
+            <Property ID="XCoordinateName" Value="X" />
+            <Property ID="YCoordinateName" Value="Y" />
+          </Selector>
+          <Selector ID="OrientationCoordinates" Value="Angles">
+            <Group ID="Coordinate[1]">
+              <Property ID="Name" Value="C" />
+            </Group>
+          </Selector>
+        </Group>
+        <Group ID="WireFrameModel">
+          <Property ID="Description" />
+        </Group>
+        <Group ID="Functions">
+          <Selector ID="Transformations" Value="Standard">
+            <Property ID="Direct" Value="customDirect" />
+            <Property ID="Inverse" Value="customInverse" />
+            <Group ID="Derivatives">
+              <Property ID="DirectDerivative" Value="customDirectDerivative" />
+              <Property ID="InverseDerivative" Value="customInverseDerivative" />
+            </Group>
+          </Selector>
+          <Group ID="WorkspaceMonitoring">
+            <Property ID="WireframeModel" Value="customWireFrameModel" />
+          </Group>
+        </Group>
+        <Group ID="JointAxesPositionLimits">
+          <Selector ID="JointAxis[1]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[2]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[3]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[4]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[5]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[6]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[7]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[8]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[9]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[10]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[11]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[12]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[13]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[14]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[15]" Value="UseAxisLimits" />
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
+</Configuration>

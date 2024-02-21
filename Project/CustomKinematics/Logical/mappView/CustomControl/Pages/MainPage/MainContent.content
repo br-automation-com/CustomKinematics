@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="MainContent" height="840" width="1450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="tbPowerRobot" top="80" left="50" width="120" height="60" zIndex="0" text="Power" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbHome" top="160" left="50" width="120" height="60" zIndex="1" text="Home" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="300" left="10" width="530" height="180" zIndex="2" text="Jogging">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbJogRobot" top="14" left="180" width="120" height="50" zIndex="0" text="Jog" />
+        <Widget xsi:type="widgets.brease.DropDownBox" id="ddbJogCoordSelect" top="74" left="180" width="120" height="40" zIndex="1" dataProvider="[{'value':'0','text':'Joints'},{'value':'1','text':'TCP'}]" selectedValue="0" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="67" left="-1" width="160" zIndex="2" text="Coordinate System" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="lblJogAxis1" top="7" left="299" zIndex="3" text="Q1:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="lblJogAxis2" top="47" left="299" zIndex="4" text="Q2:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="lblJogAxis3" top="87" left="299" zIndex="5" text="Q3:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niJogAxis1" top="7" left="399" width="121" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niJogAxis2" top="47" left="399" width="121" zIndex="7" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niJogAxis3" top="87" left="399" width="121" zIndex="8" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="40" left="230" width="1100" height="240" zIndex="3" text="Status Information">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="47" left="120" width="39" zIndex="0" text="X:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosX" top="47" left="179" width="121" zIndex="1" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="7" left="139" width="120" zIndex="2" text="TCP Positions" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="87" left="120" width="39" zIndex="3" text="Y:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosY" top="87" left="179" width="121" zIndex="4" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="127" left="120" width="39" zIndex="5" text="C:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosC" top="127" left="179" width="121" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="47" left="299" width="59" zIndex="7" text="Q1:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosQ1" top="47" left="359" width="121" zIndex="8" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="7" left="339" width="120" zIndex="9" text="Joint Positions" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="87" left="299" width="59" zIndex="10" text="Q2:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosQ2" top="87" left="359" width="121" zIndex="11" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="127" left="299" width="59" zIndex="12" text="Q3:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosQ3" top="127" left="359" width="121" zIndex="13" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRobotPowered" top="47" left="19" zIndex="14" text="Powered" value="true" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRobotHomed" top="107" left="19" zIndex="15" text="Homed" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="7" left="559" width="531" height="140" zIndex="16" text="Error/Status Info">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbErrorReset" top="51" left="21" width="121" zIndex="0" text="Error Reset" />
+            <Widget xsi:type="widgets.brease.Label" id="Label11" top="51" left="161" width="69" zIndex="1" text="Status ID:" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="tbRobotError" top="11" left="31" zIndex="2" text="Error" disabledCheckedBackColor="rgba(255, 0, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="noErrorStatusCode" top="51" left="241" width="229" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="right" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="tbMoveActive" top="11" left="181" width="129" zIndex="4" text="Move Active" disabledCheckedBackColor="rgba(255, 0, 0, 1)" enable="false" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.Label" id="Label46" top="164" left="180" width="89" zIndex="17" text="TCP Velocity:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TcpPosQ4" top="164" left="270" width="121" zIndex="18" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="520" left="10" width="490" height="220" zIndex="4" text="Movement Commands">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbMoveDirect" top="10" left="19" width="151" height="47" zIndex="0" text="Move Direct" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbMoveLinear" top="77" left="19" width="151" height="43" zIndex="1" text="Move Linear" />
+        <Widget xsi:type="widgets.brease.Label" id="lblMoveAxis1" top="17" left="249" zIndex="2" text="Q1:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="lblMoveAxis2" top="57" left="249" zIndex="3" text="Q2:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="lblMoveAxis3" top="97" left="249" zIndex="4" text="Q3:" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niMoveAxis1" top="17" left="349" width="121" zIndex="5" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niMoveAxis2" top="57" left="349" width="121" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niMoveAxis3" top="97" left="349" width="121" zIndex="7" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+        <Widget xsi:type="widgets.brease.DropDownBox" id="ddbMoveCoordSelect" top="134" left="180" width="120" height="40" zIndex="8" dataProvider="[{'value':'0','text':'Joints'},{'value':'1','text':'TCP'}]" selectedValue="0" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="137" left="9" width="160" zIndex="9" text="Coordinate System" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="300" left="560" width="770" height="530" zIndex="5" text="Transformation Test">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="10" left="10" width="750" height="470" zIndex="0">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" zIndex="0" text="Direct">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbRunDirect" top="364" left="50" width="160" height="44" zIndex="0" text="Run Direct" />
+                <Widget xsi:type="widgets.brease.Label" id="lblDirectTestQ1" top="74" left="20" zIndex="1" text="Q1:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirectTestQ1" top="74" left="120" width="121" zIndex="2" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblDirectTestQ2" top="114" left="20" zIndex="3" text="Q2:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirectTestQ2" top="114" left="120" width="121" zIndex="4" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblDirectTestQ3" top="154" left="20" zIndex="5" text="Q3:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirectTestQ3" top="154" left="120" width="121" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label12" top="74" left="371" width="39" zIndex="7" text="X:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirectTestX" top="74" left="430" width="121" zIndex="8" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+                <Widget xsi:type="widgets.brease.Label" id="Label13" top="24" left="390" width="120" zIndex="9" text="Output" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label14" top="114" left="371" width="39" zIndex="10" text="Y:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirectTestY" top="114" left="430" width="121" zIndex="11" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+                <Widget xsi:type="widgets.brease.Label" id="Label15" top="154" left="371" width="39" zIndex="12" text="C:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirectTestC" top="154" left="430" width="121" zIndex="13" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+                <Widget xsi:type="widgets.brease.Label" id="Label16" top="24" left="100" width="120" zIndex="14" text="Input" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label17" top="334" left="310" width="130" zIndex="15" text="Status Information:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.TextOutput" id="toDirectTestStatus" top="334" left="480" width="140" zIndex="16" />
+                <Widget xsi:type="widgets.brease.Label" id="Label24" top="374" left="310" width="130" zIndex="17" text="Info Code:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirectInfoStatusCode" top="374" left="490" width="110" zIndex="18" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="right" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" zIndex="1" text="Inverse">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestX" top="74" left="20" zIndex="0" text="X:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niInverseTestX" top="74" left="120" width="121" zIndex="1" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestY" top="114" left="20" zIndex="2" text="Y:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niInverseTestY" top="114" left="120" width="121" zIndex="3" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestC" top="154" left="20" zIndex="4" text="C:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niInverseTestC" top="154" left="120" width="121" zIndex="5" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label18" top="74" left="371" width="39" zIndex="6" text="Q1:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInverseTestQ1" top="74" left="430" width="121" zIndex="7" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+                <Widget xsi:type="widgets.brease.Label" id="Label19" top="24" left="390" width="120" zIndex="8" text="Output" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label20" top="114" left="371" width="39" zIndex="9" text="Q2:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInverseTestQ2" top="114" left="430" width="121" zIndex="10" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+                <Widget xsi:type="widgets.brease.Label" id="Label21" top="154" left="371" width="39" zIndex="11" text="Q3:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInverseTestQ3" top="154" left="430" width="121" zIndex="12" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+                <Widget xsi:type="widgets.brease.Label" id="Label22" top="24" left="100" width="120" zIndex="13" text="Input" style="Caption" />
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbRunInverse" top="364" left="50" width="160" height="44" zIndex="14" text="Run Inverse" />
+                <Widget xsi:type="widgets.brease.Label" id="Label23" top="334" left="310" width="130" zIndex="15" text="Status Information:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.TextOutput" id="toInverseTestStatus" top="334" left="480" width="140" zIndex="16" />
+                <Widget xsi:type="widgets.brease.Label" id="Label27" top="364" left="300" width="130" zIndex="17" text="Info Code:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInverseInfoStatusCode" top="364" left="480" width="110" zIndex="18" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="right" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="150" zIndex="2" text="Direct Derivative">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestX1" top="94" left="20" width="29" zIndex="0" text="Q1:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputPosQ1" top="94" left="70" zIndex="1" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestY1" top="134" left="20" width="29" zIndex="2" text="Q2:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputPosQ2" top="134" left="70" zIndex="3" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestC1" top="174" left="20" width="29" zIndex="4" text="Q3:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputPosQ3" top="174" left="70" zIndex="5" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label25" top="24" left="450" width="120" zIndex="6" text="Output" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label28" top="24" left="100" width="120" zIndex="7" text="Input" style="Caption" />
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbRunDirectDerivative" top="364" left="50" width="190" height="44" zIndex="8" text="Run Direct Derivative" />
+                <Widget xsi:type="widgets.brease.Label" id="Label29" top="334" left="310" width="130" zIndex="9" text="Status Information:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.TextOutput" id="toDirectDerivativeTestStatus" top="334" left="480" width="140" zIndex="10" />
+                <Widget xsi:type="widgets.brease.Label" id="Label30" top="54" left="40" width="120" zIndex="11" text="Joint Positions" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestX2" top="94" left="180" width="29" zIndex="12" text="Q1':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputDerivativeQ1" top="94" left="230" zIndex="13" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestY2" top="134" left="180" width="29" zIndex="14" text="Q2':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputDerivativeQ2" top="134" left="230" zIndex="15" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestC2" top="174" left="180" width="29" zIndex="16" text="Q3':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputDerivativeQ3" top="174" left="230" zIndex="17" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label31" top="54" left="200" width="130" zIndex="18" text="Joint Derivative" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label33" top="64" left="440" width="130" zIndex="19" text="TCP Derivative" style="Caption" />
+                <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="20" x1="350" x2="350" y1="14" y2="254" />
+                <Widget xsi:type="widgets.brease.Label" id="Label34" top="104" left="431" width="39" zIndex="21" text="X':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirDerOutputTCPDerivativeX" top="104" left="490" width="90" zIndex="22" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label35" top="144" left="431" width="39" zIndex="23" text="Y':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirDerOutputTCPDerivativeY" top="144" left="490" width="90" zIndex="24" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label36" top="184" left="431" width="39" zIndex="25" text="C':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirDerOutputTCPDerivativeC" top="184" left="490" width="90" zIndex="26" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label44" top="364" left="300" width="130" zIndex="27" text="Info Code:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noDirectDerivativeInfoStatusCode" top="364" left="480" width="110" zIndex="28" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="right" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="0" width="150" zIndex="3" text="Inverse Derivative">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestX3" top="94" left="20" width="29" zIndex="0" text="X:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputPosQ4" top="94" left="70" zIndex="1" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestY3" top="134" left="20" width="29" zIndex="2" text="Y:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputPosQ5" top="134" left="70" zIndex="3" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestC3" top="174" left="20" width="29" zIndex="4" text="C:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niDirDerInputPosQ6" top="174" left="70" zIndex="5" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label26" top="24" left="450" width="120" zIndex="6" text="Output" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label32" top="24" left="100" width="120" zIndex="7" text="Input" style="Caption" />
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbRunInverseDerivative" top="364" left="50" width="190" height="44" zIndex="8" text="Run Inverse Derivative" />
+                <Widget xsi:type="widgets.brease.Label" id="Label37" top="334" left="310" width="130" zIndex="9" text="Status Information:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.TextOutput" id="toInverseDerivativeTestStatus" top="334" left="480" width="140" zIndex="10" />
+                <Widget xsi:type="widgets.brease.Label" id="Label38" top="54" left="40" width="120" zIndex="11" text="TCP Positions" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestX4" top="94" left="180" width="29" zIndex="12" text="X':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niInvDerInputDerivativeX" top="94" left="230" zIndex="13" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestY4" top="134" left="180" width="29" zIndex="14" text="Y':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niInvDerInputDerivativeY" top="134" left="230" zIndex="15" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="lblInverseTestC4" top="174" left="180" width="29" zIndex="16" text="C':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="niInvDerInputDerivativeC" top="174" left="230" zIndex="17" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label39" top="54" left="200" width="130" zIndex="18" text="TCP Derivative" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label40" top="64" left="440" width="130" zIndex="19" text="Joint Derivative" style="Caption" />
+                <Widget xsi:type="widgets.brease.Label" id="Label41" top="104" left="431" width="39" zIndex="21" text="Q1':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInvDerOutputDerivativeQ1" top="104" left="490" width="90" zIndex="22" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label42" top="144" left="431" width="39" zIndex="23" text="Q2':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInvDerOutputDerivativeQ2" top="144" left="490" width="90" zIndex="24" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Label" id="Label43" top="184" left="431" width="39" zIndex="25" text="Q3':" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInvDerOutputDerivativeQ3" top="184" left="490" width="90" zIndex="26" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="right" />
+                <Widget xsi:type="widgets.brease.Line" id="Line3" zIndex="27" x1="350" x2="350" y1="14" y2="264" />
+                <Widget xsi:type="widgets.brease.Label" id="Label45" top="374" left="300" width="130" zIndex="28" text="Info Code:" textAlign="right" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="noInverseDerivativeInfoStatusCode" top="374" left="480" width="110" zIndex="29" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="right" />
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

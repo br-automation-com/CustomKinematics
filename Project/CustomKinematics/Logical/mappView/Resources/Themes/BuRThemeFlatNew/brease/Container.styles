@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Styles id="BuRThemeFlatNewcontainerStyles" xmlns="http://www.br-automation.com/iat2015/styles/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	
+	<!--fly out-->
+	
+	<Style id="transparent" xsi:type="widgets.brease.FlyOut" 
+	backColor="transparent" 
+		borderStyle="none" 
+		borderWidth="0px" 
+		buttonBorderWidth="0px" 
+		buttonBackColor="transparent" />
+	
+	<!--group box-->
+	
+	<Style id="transparent" xsi:type="widgets.brease.GroupBox" 
+		borderWidth="0px" 
+		backColor="transparent" 
+		fontName="ABBvoice" fontSize="16px" 
+		bold="false" 
+		imageColor="#ff8800"/>
+		
+	<Style id="SubNavigation" xsi:type="widgets.brease.GroupBox" 
+		borderWidth="0px" 
+		backColor="rgba(255, 136, 0, 0.5)" 
+		fontName="ABBvoice" fontSize="16px" 
+		bold="false" 
+		imageColor="#ff8800"/>	
+	
+	<Style id="Infobox" xsi:type="widgets.brease.GroupBox" 
+		borderWidth="0px" 
+		backColor="rgba(255, 255, 255, 1)"
+		headerBackColor="#ff8800" 
+		fontName="ABBvoice" fontSize="16px" 
+		bold="false" 
+		textAlign="left"
+		imageColor="#ff8800"/>	
+	
+	<Style id="InfoboxFrame" xsi:type="widgets.brease.GroupBox" 
+		borderWidth="0px" 
+		borderColor="#ff8800"
+		backColor="rgba(255, 255, 255, 1)"
+		headerBackColor="#ff8800" 
+		fontName="ABBvoice" fontSize="16px" 
+		bold="false"
+		textAlign="left" 
+		imageColor="#ff8800"/>					
+	
+	<Style id="GroupBox1" xsi:type="widgets.brease.GroupBox" 
+		headerBackColor="#262626"
+		bold="false"  
+		fontName="ABBvoice" fontSize="16px" 
+		textColor="#ffffff" 
+		cornerRadius="0px" 
+		borderWidth="0px" 
+		backColor="#d2d2d2" 
+		borderColor="transparent"  
+		imageColor="#ff8800" />
+
+</Styles>
