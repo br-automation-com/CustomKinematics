@@ -24,6 +24,6 @@
     <Build GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
     <Transfer SavedOfflineInstallationFolder="" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" />
-    <Vc FirmwareVersion="V4.72.6" />
+    <Vc FirmwareVersion="" />
   </Configuration>
 </Cpu>

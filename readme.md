@@ -33,3 +33,12 @@ This is a sample project that showcases an implementation of a custom kinematics
 ### Notes:
 This is a sample project and is intended as demonstration purpose for ArSim usage primarily.
 A change of the dimension from the help use case was made for the dimension to be 650 units instead of 65 for visualization in Scene Viewer only. Any dimension can be chosen instead if the scene is updated appropriately.
+
+
+#### Versions:  
+Developed with the following versions:
+- AS 4.12.4.107
+- AR: H4.93
+- MpMotion: 5.24.1
+- MpCockpit: 5.24.1
+- MpView: 5.24.0
