@@ -74,5 +74,6 @@
     <LibraryObject Name="AsBrStr" Source="Libraries.AsBrStr.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="AsARCfg" Source="Libraries.AsARCfg.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="sys_lib" Source="Libraries.sys_lib.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="CusMechSca" Source="Libraries.CusMechSca.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
   </Libraries>
 </SwConfiguration>

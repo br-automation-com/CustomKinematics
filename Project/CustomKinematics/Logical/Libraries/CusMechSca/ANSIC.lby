@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="1.00.0" SubType="ANSIC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>CusMechSca.fun</File>
+    <File>customDirect.c</File>
+    <File>customInverse.c</File>
+    <File>customDirectDerivative.c</File>
+    <File>customInverseDerivative.c</File>
+    <File>CusMechSca.typ</File>
+    <File>degreesToRadians.c</File>
+    <File>radiansToDegrees.c</File>
+    <File>helpFunctions.c</File>
+    <File>jacobian.c</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="McPathGen" FromVersion="5.08.0" />
+  </Dependencies>
+</Library>
