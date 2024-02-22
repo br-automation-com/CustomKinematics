@@ -1,6 +1,6 @@
 # Custom Kinematics Sample Project
 
-This is a sample project that showcases an implementation of a custom kinematics defined the Automation Studio Help UseCases section under MpMotion.
+This is a sample project that showcases an implementation of a custom kinematics defined the Automation Studio Help UseCases section under MpMotion [here](https://help.br-automation.com/#/en/4/motion%2Fmapp_motion%2Fanwendungsfalle%2Fcustom_mechanical_system%2Fcustom_mechanical_system_.html).
 
 ![RobotOverview](./Documentation/RobotOverview.png)
 
